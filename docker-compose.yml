@@ -18,18 +18,5 @@ services:
       timeout: 5s
       retries: 5
 
-  spring-app:
-    build: .
-    container_name: spring_app
-    depends_on:
-      postgres:
-        condition: service_healthy
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/mydatabase
-      SPRING_DATASOURCE_USERNAME: myuser
-      SPRING_DATASOURCE_PASSWORD: mypassword
-    ports:
-      - "8080:8080"
-
 volumes:
   postgres_data:
