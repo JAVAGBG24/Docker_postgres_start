@@ -1,4 +1,4 @@
-## När det gått åt skogen ett par gånger kan det vara bra att renda Docker helt.
+## När det gått åt skogen ett par gånger kan det vara bra att reseta Docker helt.
 
 1. Se till att du står i ditt projekt i terminalen.
 2. Stoppa och ta bort containrarna för just detta projekt, -v tar bort hela volymen också:
